@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/*
+  OneGold EU Landing Page — design tokens extracted from Figma
+  File: cxWwsFbMl3mfz9h26kOaiS  Node: 5844:6847 (M - European Launch Landing Page)
+*/
+
+@theme {
+  /* Brand colors */
+  --color-navy: #102c4a;        /* hero / page background */
+  --color-navy-deep: #0b2138;   /* darker panels */
+  --color-cyan: #3fe2ff;        /* accent / promo highlight */
+  --color-gold: #f5a623;        /* refined per section */
+  --color-ink: #1a1a1a;
+  --color-muted: #6b7785;
+
+  /* Type */
+  --font-sans: var(--font-open-sans), "Open Sans", system-ui, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+html,
+body {
+  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
