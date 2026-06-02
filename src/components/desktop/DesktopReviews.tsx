@@ -38,14 +38,14 @@ export default function DesktopReviews() {
         <span className="text-[#197eeb]">OneGold</span> is Loved by Investors Like You
       </h2>
 
-      <div className="relative mx-auto flex w-full max-w-[1240px] flex-wrap items-center justify-center gap-[17px]">
+      <div className="relative mx-auto flex w-full max-w-[1240px] flex-wrap items-stretch justify-center gap-[17px]">
         <span className="absolute left-0 top-1/2 hidden -translate-y-1/2 min-[1440px]:block">
           <Chevron dir="left" />
         </span>
         {REVIEWS.map((r) => (
           <article
             key={r.name}
-            className="relative flex h-[350px] w-[275px] shrink-0 flex-col items-center rounded-[20px] bg-white px-[25px] pb-[37px] pt-[45px] shadow-[0_4px_24px_rgba(16,44,74,0.06)]"
+            className="flex w-[275px] shrink-0 flex-col items-center rounded-[20px] bg-white px-[25px] pb-[37px] pt-[45px] shadow-[0_4px_24px_rgba(16,44,74,0.06)]"
           >
             <Image src="/assets/review-stars.svg" alt="5 out of 5 stars" width={149} height={27} className="h-[27px] w-[149px]" />
             <p className="pt-[18px] text-[22.6px] font-bold leading-[27px] text-[#1a1a1a]" style={arial}>
@@ -56,9 +56,6 @@ export default function DesktopReviews() {
             </p>
             <p className="px-[21px] pt-[27px] text-center text-[18px] leading-[24.87px] text-[#1a1a1a]" style={arial}>
               {r.quote}
-            </p>
-            <p className="absolute bottom-[37px] text-[18.1px] leading-[24.87px] text-[#197eeb]" style={arial}>
-              {r.date}
             </p>
           </article>
         ))}
