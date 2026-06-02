@@ -56,33 +56,15 @@ function SupportRegion({
 }
 
 function FlagUS() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-us-bg.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-us-stripes.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-us-stars.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-us.svg" alt="US flag" fill aria-hidden className="object-cover" />;
 }
 
 function FlagDE() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-de-black.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-de-red.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-de-gold.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-de.svg" alt="German flag" fill aria-hidden className="object-cover" />;
 }
 
 function FlagUK() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-uk-1.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-uk-2.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-uk-3.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-uk.svg" alt="UK flag" fill aria-hidden className="object-cover" />;
 }
 
 function FaqOfferBand() {
@@ -234,26 +216,14 @@ function FaqBullion() {
   return (
     <section className="flex w-full flex-col items-center px-[100px] py-[80px] bg-white">
       <div className="flex flex-col gap-[30px] items-center max-w-[800px] w-full">
-        {/* BIG logo – composed from two overlapping SVG layers */}
-        <div className="relative h-[78px] w-[220px]">
-          {/* Gold/orange arrow shape (top, offset right) */}
-          <Image
-            src="/assets/faq-big-logo-top.svg"
-            alt=""
-            aria-hidden
-            fill
-            className="object-contain"
-          />
-          {/* Silver/grey shape (left) */}
-          <Image
-            src="/assets/faq-big-logo-left.svg"
-            alt=""
-            aria-hidden
-            width={45}
-            height={72}
-            className="absolute left-0 top-[1px] h-[72px] w-[45px] object-contain"
-          />
-        </div>
+        {/* Bullion International Group logo */}
+        <Image
+          src="/assets/bullion-logo.png"
+          alt="Bullion International Group"
+          width={220}
+          height={78}
+          className="h-[78px] w-[220px] object-contain"
+        />
 
         <p className="text-center text-[18px] font-normal leading-normal text-black">
           Bullion International Group is a global leader in precious metals,

@@ -50,10 +50,10 @@ export default function FaqAccordion({
                 <Image
                   src="/assets/faq-chevron.svg"
                   alt=""
-                  width={27}
-                  height={24}
+                  width={24}
+                  height={13}
                   aria-hidden
-                  className="h-[24px] w-[27px]"
+                  className="h-[13px] w-[24px]"
                 />
               </span>
             </button>

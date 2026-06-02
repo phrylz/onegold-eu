@@ -52,33 +52,15 @@ function SupportRegionMobile({
 }
 
 function FlagUS() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-us-bg.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-us-stripes.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-us-stars.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-us.svg" alt="US flag" fill aria-hidden className="object-cover" />;
 }
 
 function FlagDE() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-de-black.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-de-red.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-de-gold.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-de.svg" alt="German flag" fill aria-hidden className="object-cover" />;
 }
 
 function FlagUK() {
-  return (
-    <div className="relative size-full overflow-hidden">
-      <Image src="/assets/faq-flag-uk-1.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-uk-2.svg" alt="" fill aria-hidden className="object-cover" />
-      <Image src="/assets/faq-flag-uk-3.svg" alt="" fill aria-hidden className="object-cover" />
-    </div>
-  );
+  return <Image src="/assets/support-flag-uk.svg" alt="UK flag" fill aria-hidden className="object-cover" />;
 }
 
 function FaqMobileOfferBand() {
@@ -219,23 +201,13 @@ function FaqMobileNumbers() {
 function FaqMobileBullion() {
   return (
     <section className="flex w-full flex-col items-center px-[20px] py-[50px] bg-white gap-[24px]">
-      <div className="relative h-[62px] w-[175px]">
-        <Image
-          src="/assets/faq-big-logo-top.svg"
-          alt=""
-          aria-hidden
-          fill
-          className="object-contain"
-        />
-        <Image
-          src="/assets/faq-big-logo-left.svg"
-          alt=""
-          aria-hidden
-          width={36}
-          height={57}
-          className="absolute left-0 top-[1px] h-[57px] w-[36px] object-contain"
-        />
-      </div>
+      <Image
+        src="/assets/bullion-logo.png"
+        alt="Bullion International Group"
+        width={175}
+        height={62}
+        className="h-[62px] w-[175px] object-contain"
+      />
 
       <p className="text-center text-[16px] font-normal leading-normal text-black">
         Bullion International Group is a global leader in precious metals,
