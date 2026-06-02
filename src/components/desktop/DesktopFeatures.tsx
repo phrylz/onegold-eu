@@ -44,8 +44,8 @@ export default function DesktopFeatures() {
   return (
     <section className="flex w-full flex-col items-center gap-10 bg-white pb-[50px] pt-[100px]" data-node-id="5844:6630">
       <h2 className="whitespace-nowrap text-[48px] font-normal leading-normal text-black">
-        <span className="text-[#197eeb]">OneGold</span> Meets the Demands of
-        Today&rsquo;s Investor
+        <span className="text-[#197eeb]">OneGold</span>{" "}
+        Meets the Demands of Today&rsquo;s Investor
       </h2>
       <div className="mx-auto flex w-full max-w-[1240px] flex-wrap items-stretch justify-center gap-10 px-4 min-[1440px]:px-0">
         {BOXES.map((box) => (

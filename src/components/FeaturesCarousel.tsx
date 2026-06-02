@@ -60,8 +60,8 @@ export default function FeaturesCarousel() {
       data-node-id="5844:7122"
     >
       <h2 className="w-[320px] text-center text-[36px] font-normal leading-normal text-black">
-        <span className="text-[#197eeb]">OneGold</span> Meets the Demands of
-        Today&rsquo;s Investor
+        <span className="text-[#197eeb]">OneGold</span>{" "}
+        Meets the Demands of Today&rsquo;s Investor
       </h2>
 
       <div
