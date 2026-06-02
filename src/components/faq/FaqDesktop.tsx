@@ -218,11 +218,11 @@ function FaqBullion() {
       <div className="flex flex-col gap-[30px] items-center max-w-[800px] w-full">
         {/* Bullion International Group logo */}
         <Image
-          src="/assets/bullion-logo.png"
+          src="/assets/bullion-logo-dark.png"
           alt="Bullion International Group"
-          width={220}
-          height={78}
-          className="h-[78px] w-[220px] object-contain"
+          width={200}
+          height={104}
+          className="h-[104px] w-[200px] object-contain"
         />
 
         <p className="text-center text-[18px] font-normal leading-normal text-black">

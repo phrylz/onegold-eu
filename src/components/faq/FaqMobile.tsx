@@ -202,11 +202,11 @@ function FaqMobileBullion() {
   return (
     <section className="flex w-full flex-col items-center px-[20px] py-[50px] bg-white gap-[24px]">
       <Image
-        src="/assets/bullion-logo.png"
+        src="/assets/bullion-logo-dark.png"
         alt="Bullion International Group"
-        width={175}
-        height={62}
-        className="h-[62px] w-[175px] object-contain"
+        width={160}
+        height={83}
+        className="h-[83px] w-[160px] object-contain"
       />
 
       <p className="text-center text-[16px] font-normal leading-normal text-black">
