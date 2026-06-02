@@ -30,7 +30,8 @@ npm run lint       # eslint
 
 | Route | Description |
 |-------|-------------|
-| `/` | Landing page — distinct mobile (390px) and desktop (1440px) layouts |
+| `/` | Landing page (US) — distinct mobile (390px) and desktop (1440px) layouts |
+| `/en-gb` · `/de` · `/it` · `/fr` | Localized landing routes (UK / Germany / Italy / France) — starting copies of `/`, selectable via the country selector |
 | `/faq` | FAQ accordion + stats |
 | `/support` | International support contacts (US / DE / UK) |
 | `/gold-avenue` | Gold Avenue redemption landing |
@@ -48,6 +49,13 @@ reflowing one tree:
 
 - Below 1024px → `MobileLanding` (centered, `max-w-[480px]`)
 - At/above 1024px → `DesktopLanding` (centered, `max-w-[1440px]`, fluid 1024→1440)
+
+## Country selector
+
+`CountrySelector` (`src/components/CountrySelector.tsx`) is a client component
+in the headers (desktop Support/GA nav, desktop landing price bar, and mobile
+hero/headers). It lists US / UK / DE / IT / FR with flags + currency, detects
+the active locale from the URL, and links to the matching localized route.
 
 ## Project structure
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountrySelector from "@/components/CountrySelector";
 
 export default function Hero() {
   return (
@@ -15,6 +16,11 @@ export default function Hero() {
         aria-hidden
         className="z-0 object-cover"
       />
+
+      {/* Country selector */}
+      <div className="absolute right-3 top-3 z-20">
+        <CountrySelector tone="light" />
+      </div>
 
       {/* Hero content */}
       <div className="relative z-10 flex w-full flex-col items-center gap-[25px]">

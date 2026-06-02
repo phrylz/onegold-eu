@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DesktopPriceBar from "@/components/desktop/DesktopPriceBar";
+import CountrySelector from "@/components/CountrySelector";
 
 const NAV_ITEMS = [
   { label: "How It Works", active: false },
@@ -68,31 +69,7 @@ export default function SupportHeader() {
         {/* Right: locale + auth buttons */}
         <div className="flex items-center gap-[20px]">
           {/* Locale */}
-          <div className="flex items-center gap-[10px]">
-            <div className="flex items-center gap-[2px]">
-              {/* UK flag icon */}
-              <svg width="13" height="13" viewBox="0 0 60 30" aria-hidden>
-                <clipPath id="hdr-uk"><rect width="60" height="30"/></clipPath>
-                <rect width="60" height="30" fill="#012169"/>
-                <path d="M0,0 L60,30 M60,0 L0,30" stroke="white" strokeWidth="6" clipPath="url(#hdr-uk)"/>
-                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4" clipPath="url(#hdr-uk)"/>
-                <rect x="24" y="0" width="12" height="30" fill="white"/>
-                <rect x="0" y="9" width="60" height="12" fill="white"/>
-                <rect x="26" y="0" width="8" height="30" fill="#C8102E"/>
-                <rect x="0" y="11" width="60" height="8" fill="#C8102E"/>
-              </svg>
-              <span className="text-[16px] leading-normal text-[#666]">EN</span>
-              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" aria-hidden>
-                <path d="M1 1l3.5 4L8 1" stroke="#666" strokeWidth="1.2" strokeLinecap="round"/>
-              </svg>
-            </div>
-            <div className="flex items-center gap-[2px]">
-              <span className="text-[16px] leading-normal text-[#666]">USD</span>
-              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" aria-hidden>
-                <path d="M1 1l3.5 4L8 1" stroke="#666" strokeWidth="1.2" strokeLinecap="round"/>
-              </svg>
-            </div>
-          </div>
+          <CountrySelector tone="dark" />
 
           {/* Login */}
           <button className="flex items-center justify-center rounded-[20px] border border-[#197eeb] px-[20px] py-[10px]">

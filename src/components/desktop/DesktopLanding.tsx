@@ -12,7 +12,7 @@ import DesktopFooter from "@/components/desktop/DesktopFooter";
 export default function DesktopLanding() {
   return (
     <div className="mx-auto flex w-full max-w-[1440px] flex-col overflow-hidden bg-white">
-      <DesktopPriceBar />
+      <DesktopPriceBar localeSelector />
       <DesktopHero />
       <DesktopAsFeatured />
       <DesktopOutro />

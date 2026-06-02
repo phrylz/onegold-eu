@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import CountrySelector from "@/components/CountrySelector";
 
 type ContactRegion = {
   flag: string;
@@ -81,16 +82,19 @@ export default function SupportMobile() {
           height={26}
           className="h-[26px] w-auto"
         />
-        <button
-          aria-label="Open menu"
-          className="flex h-10 w-10 items-center justify-center"
-        >
-          <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden>
-            <rect width="22" height="2" rx="1" fill="#197eeb"/>
-            <rect y="7" width="22" height="2" rx="1" fill="#197eeb"/>
-            <rect y="14" width="22" height="2" rx="1" fill="#197eeb"/>
-          </svg>
-        </button>
+        <div className="flex items-center gap-3">
+          <CountrySelector tone="dark" />
+          <button
+            aria-label="Open menu"
+            className="flex h-10 w-10 items-center justify-center"
+          >
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden>
+              <rect width="22" height="2" rx="1" fill="#197eeb"/>
+              <rect y="7" width="22" height="2" rx="1" fill="#197eeb"/>
+              <rect y="14" width="22" height="2" rx="1" fill="#197eeb"/>
+            </svg>
+          </button>
+        </div>
       </header>
 
       {/* Introduction */}

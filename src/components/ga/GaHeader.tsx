@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountrySelector from "@/components/CountrySelector";
 
 export default function GaHeader() {
   return (
@@ -24,6 +25,11 @@ export default function GaHeader() {
           priority
           className="h-[50px] w-[233px] object-contain"
         />
+      </div>
+
+      {/* Country selector */}
+      <div className="absolute right-4 top-1/2 z-20 -translate-y-1/2 min-[1024px]:right-10">
+        <CountrySelector tone="light" />
       </div>
     </header>
   );

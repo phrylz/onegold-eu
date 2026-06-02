@@ -24,9 +24,16 @@ function Arrow({ dir }: { dir: "up" | "down" }) {
   );
 }
 
-export default function DesktopPriceBar() {
+import CountrySelector from "@/components/CountrySelector";
+
+export default function DesktopPriceBar({
+  localeSelector = false,
+}: {
+  /** Show the country/currency selector at the right (used on the landing). */
+  localeSelector?: boolean;
+}) {
   return (
-    <div className="flex w-full items-center justify-center gap-10 bg-[#1a3d62] px-[100px] py-[10px]" data-node-id="5844:6347">
+    <div className="relative z-30 flex w-full items-center justify-center gap-10 bg-[#1a3d62] px-[100px] py-[10px]" data-node-id="5844:6347">
       {ROWS.map((r) => {
         const color = r.dir === "up" ? "text-[#27d659]" : "text-[#ff3c00]";
         return (
@@ -39,6 +46,11 @@ export default function DesktopPriceBar() {
           </div>
         );
       })}
+      {localeSelector && (
+        <div className="absolute right-[20px] top-1/2 -translate-y-1/2">
+          <CountrySelector tone="light" />
+        </div>
+      )}
     </div>
   );
 }
