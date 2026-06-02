@@ -157,10 +157,10 @@ export default function AdvantagesChart() {
             />
           </OgCell>
           <div className="flex h-[80px] w-[90px] items-center justify-center">
-            <p className="text-center text-[16px] text-[#666]">EFTs</p>
+            <p className="text-center font-hanken text-[16px] text-[#666]">EFTs</p>
           </div>
           <div className="flex h-[80px] w-[90px] items-center justify-center">
-            <p className="text-center text-[16px] leading-normal text-[#666]">
+            <p className="text-center font-hanken text-[16px] leading-normal text-[#666]">
               Physical Gold
             </p>
           </div>

@@ -77,8 +77,14 @@ export default function DesktopChart() {
           <OgCell rounded="top">
             <Image src="/assets/onegold-logo.png" alt="OneGold" width={107} height={23} className="h-[23px] w-[107px]" />
           </OgCell>
-          <PhysCell>EFTs</PhysCell>
-          <PhysCell>Physical Gold</PhysCell>
+          <div className="flex h-[80px] flex-1 items-center justify-center">
+            <p className="w-[150px] text-center text-[20px] leading-normal text-[#666]">EFTs</p>
+          </div>
+          <div className="flex h-[80px] flex-1 items-center justify-center">
+            <p className="w-[150px] text-center font-hanken text-[20px] leading-normal text-[#666]">
+              Physical Gold
+            </p>
+          </div>
         </div>
         {ROWS.map((row, i) => {
           const last = i === ROWS.length - 1;

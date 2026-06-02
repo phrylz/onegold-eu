@@ -16,6 +16,7 @@
 
   /* Type */
   --font-sans: var(--font-open-sans), "Open Sans", system-ui, sans-serif;
+  --font-hanken: var(--font-hanken-grotesk), "Hanken Grotesk", system-ui, sans-serif;
 }
 
 :root {

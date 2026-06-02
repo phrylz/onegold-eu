@@ -52,9 +52,11 @@ landing page plus related pages, responsive across mobile (390px) and desktop
    header logo in particular should be replaced with a single clean asset.
 4. **Flags** on `/support` are hand-authored SVGs (Figma flags are multi-layer
    composites); visually accurate but not vendor-exact.
-5. **Fonts:** Stats/review numbers use Arial (as in Figma). Chart column headers
-   use Open Sans (Figma uses Hanken Grotesk for two short labels) — swap in
-   `next/font` Hanken Grotesk if exact match is required.
+5. **Fonts (verified exact against Figma):** Open Sans (400/600/700) for
+   headings/body/nav; **Arial** for stats numbers + review cards; **Hanken
+   Grotesk** for the chart column headers — matching Figma's per-label spec
+   (mobile: EFTs + Physical Gold both Hanken; desktop: EFTs Open Sans, Physical
+   Gold Hanken). All three loaded via `next/font` (Arial is a system font).
 6. **Mobile frames for related pages:** Figma only contained desktop frames for
    FAQ/Support/GA/Legal — their mobile layouts are faithful adaptations of the
    desktop designs, not pixel-matched to a mobile artboard (none exists).
