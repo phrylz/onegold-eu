@@ -1,4 +1,5 @@
 import DesktopPriceBar from "@/components/desktop/DesktopPriceBar";
+import SiteHeader from "@/components/SiteHeader";
 import DesktopHero from "@/components/desktop/DesktopHero";
 import DesktopAsFeatured from "@/components/desktop/DesktopAsFeatured";
 import DesktopOutro from "@/components/desktop/DesktopOutro";
@@ -12,7 +13,8 @@ import DesktopFooter from "@/components/desktop/DesktopFooter";
 export default function DesktopLanding() {
   return (
     <div className="flex w-full flex-col overflow-hidden bg-white">
-      <DesktopPriceBar localeSelector />
+      <DesktopPriceBar />
+      <SiteHeader />
       <DesktopHero />
       <DesktopAsFeatured />
       <DesktopOutro />

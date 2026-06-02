@@ -43,14 +43,6 @@ export default function DesktopHero() {
           />
 
           <div className="flex min-w-0 flex-1 flex-col items-start gap-5">
-            <Image
-              src="/assets/onegold-logo.png"
-              alt="OneGold"
-              width={175}
-              height={38}
-              priority
-              className="h-[38px] w-[175px]"
-            />
             <h1 className="whitespace-nowrap text-[48px] font-normal leading-normal text-white">
               Gold and Silver Simplified
             </h1>
