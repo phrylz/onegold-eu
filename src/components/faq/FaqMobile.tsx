@@ -1,40 +1,7 @@
 import Image from "next/image";
+import SiteHeader from "@/components/SiteHeader";
 import FaqAccordion from "./FaqAccordion";
 import { FAQ_ITEMS } from "./faqData";
-
-// ─── Logo header ────────────────────────────────────────────────────────────
-
-function FaqMobileLogoHeader() {
-  return (
-    <header className="relative flex h-[100px] w-full items-center justify-center overflow-hidden bg-navy">
-      <Image
-        src="/assets/faq-header-bg.jpg"
-        alt=""
-        fill
-        aria-hidden
-        priority
-        className="z-0 object-cover"
-      />
-      <div className="relative z-10 flex h-[40px] w-[186px] shrink-0 items-center overflow-hidden">
-        <Image
-          src="/assets/faq-logo-icon.svg"
-          alt=""
-          width={41}
-          height={34}
-          aria-hidden
-          className="absolute left-0 top-[10%] h-auto w-[22%]"
-        />
-        <Image
-          src="/assets/faq-logo-text.svg"
-          alt="OneGold"
-          width={145}
-          height={40}
-          className="absolute right-0 top-0 h-[40px] w-[78%]"
-        />
-      </div>
-    </header>
-  );
-}
 
 // ─── Support region (mobile stacked) ─────────────────────────────────────────
 
@@ -330,7 +297,7 @@ function FaqMobileFooterBar() {
 export default function FaqMobile() {
   return (
     <div className="mx-auto flex w-full max-w-[480px] flex-col overflow-hidden bg-white">
-      <FaqMobileLogoHeader />
+      <SiteHeader />
       <FaqMobileOfferBand />
       <FaqMobileIntroduction />
       <FaqMobileNumbers />

@@ -1,44 +1,7 @@
 import Image from "next/image";
+import SiteHeader from "@/components/SiteHeader";
 import FaqAccordion from "./FaqAccordion";
 import { FAQ_ITEMS } from "./faqData";
-
-// ─── Logo header ────────────────────────────────────────────────────────────
-
-function FaqLogoHeader() {
-  return (
-    <header className="relative flex h-[130px] w-full items-center justify-center overflow-hidden bg-navy">
-      {/* Background texture */}
-      <Image
-        src="/assets/faq-header-bg.jpg"
-        alt=""
-        fill
-        aria-hidden
-        priority
-        className="z-0 object-cover"
-      />
-      {/* OneGold white logo composed from two SVG parts */}
-      <div className="relative z-10 flex h-[50px] w-[233px] shrink-0 items-center overflow-hidden">
-        {/* Icon part (gold bar, ~18% from left) */}
-        <Image
-          src="/assets/faq-logo-icon.svg"
-          alt=""
-          width={51}
-          height={42}
-          aria-hidden
-          className="absolute left-0 top-[10%] h-auto w-[22%]"
-        />
-        {/* Text part */}
-        <Image
-          src="/assets/faq-logo-text.svg"
-          alt="OneGold"
-          width={181}
-          height={50}
-          className="absolute right-0 top-0 h-[50px] w-[78%]"
-        />
-      </div>
-    </header>
-  );
-}
 
 // ─── Support offer band ──────────────────────────────────────────────────────
 
@@ -353,7 +316,7 @@ function FaqFooterBar() {
 export default function FaqDesktop() {
   return (
     <div className="flex w-full flex-col overflow-hidden bg-white">
-      <FaqLogoHeader />
+      <SiteHeader />
       <FaqOfferBand />
       <FaqIntroduction />
       <FaqNumbers />

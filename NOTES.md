@@ -46,10 +46,10 @@ landing page plus related pages, responsive across mobile (390px) and desktop
    16-section text including the data-sharing table and CA/NV sections. The
    footer "Privacy Policy" link is wired to `/legal/privacy`; "User Agreement"
    to `/legal`.
-3. **Reconstructed brand marks:** Some logos Figma decomposes into stacked SVG
-   sub-paths (the FAQ "BIG"/Bullion composite, GA OneGold header mark) were
-   reassembled from parts or substituted with the clean white logo. The FAQ
-   header logo in particular should be replaced with a single clean asset.
+3. **Shared header:** Landing, GA, and FAQ all use one `SiteHeader` (navy
+   banner, centered clean white OneGold logo, country selector). Some other
+   logos Figma decomposes into stacked SVG sub-paths (the Bullion "BIG"
+   composite) are reassembled from parts.
 4. **Flags** on `/support` are hand-authored SVGs (Figma flags are multi-layer
    composites); visually accurate but not vendor-exact.
 5. **Fonts (verified exact against Figma):** Open Sans (400/600/700) for
