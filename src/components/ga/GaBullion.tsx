@@ -61,22 +61,24 @@ export default function GaBullion() {
         </a>
       </div>
 
-      {/* Black footer bar */}
-      <div className="flex w-full items-center gap-[10px] bg-black h-[50px] px-[100px] max-[1023px]:px-4">
-        <Image
-          src="/assets/goldbar-icon.svg"
-          alt=""
-          width={14}
-          height={22}
-          className="h-[22px] w-[14px] shrink-0"
-          aria-hidden
-        />
-        <p className="whitespace-nowrap text-[16px] font-normal leading-normal text-white">
-          A Bullion International Group Company
-        </p>
-        <p className="flex-1 text-right text-[16px] font-normal leading-normal text-white">
-          © 2025 OneGold
-        </p>
+      {/* Black footer bar — full bleed, content locked to container */}
+      <div className="w-full bg-black">
+        <div className="mx-auto flex h-[50px] w-full max-w-[1240px] items-center gap-[10px] px-4 min-[1440px]:px-0">
+          <Image
+            src="/assets/goldbar-icon.svg"
+            alt=""
+            width={14}
+            height={22}
+            className="h-[22px] w-[14px] shrink-0"
+            aria-hidden
+          />
+          <p className="whitespace-nowrap text-[16px] font-normal leading-normal text-white">
+            A Bullion International Group Company
+          </p>
+          <p className="flex-1 text-right text-[16px] font-normal leading-normal text-white">
+            © 2025 OneGold
+          </p>
+        </div>
       </div>
     </section>
   );

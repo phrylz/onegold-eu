@@ -99,7 +99,7 @@ export default function DesktopHero() {
       {/* QR "Get the App" pinned top-right */}
       <a
         href="https://onegold.smart.link/pd8n6enxs"
-        className="absolute right-[100px] top-0 z-20 flex w-[160px] flex-col items-center gap-[15px] rounded-b-[20px] border border-[#197eeb] bg-[#0060d4] py-[10px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)]"
+        className="absolute right-[max(16px,calc((100%-1240px)/2))] top-0 z-20 flex w-[160px] flex-col items-center gap-[15px] rounded-b-[20px] border border-[#197eeb] bg-[#0060d4] py-[10px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)]"
       >
         <span className="text-center text-[20px] text-white">Get the App</span>
         <Image

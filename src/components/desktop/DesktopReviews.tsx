@@ -38,7 +38,7 @@ export default function DesktopReviews() {
         <span className="text-[#197eeb]">OneGold</span> is Loved by Investors Like You
       </h2>
 
-      <div className="relative flex w-full flex-wrap items-center justify-center gap-[17px]">
+      <div className="relative mx-auto flex w-full max-w-[1240px] flex-wrap items-center justify-center gap-[17px]">
         <span className="absolute left-0 top-1/2 hidden -translate-y-1/2 min-[1440px]:block">
           <Chevron dir="left" />
         </span>

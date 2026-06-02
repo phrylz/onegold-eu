@@ -7,7 +7,7 @@ import GaBullion from "@/components/ga/GaBullion";
 
 export default function GaDesktop() {
   return (
-    <div className="mx-auto flex w-full max-w-[1440px] flex-col overflow-hidden bg-white">
+    <div className="flex w-full flex-col overflow-hidden bg-white">
       <GaHeader />
       <GaHero />
       <GaProducts />

@@ -4,7 +4,7 @@ export default function DesktopOutro() {
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden bg-[#e1edff] px-[100px] py-[120px]" data-node-id="5844:6460">
       <Image src="/assets/d-outro-bg.jpg" alt="" fill aria-hidden className="z-0 object-cover" />
-      <div className="relative z-10 flex w-full items-center gap-5">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1240px] items-center gap-5">
         <div className="flex min-w-0 flex-1 flex-col items-start gap-5 text-black">
           <h2 className="w-[548px] text-[48px] font-normal leading-normal">
             Secure by Nature. Seamless by Design.

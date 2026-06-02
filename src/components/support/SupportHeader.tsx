@@ -25,7 +25,8 @@ export default function SupportHeader() {
       <DesktopPriceBar />
 
       {/* Main header */}
-      <div className="flex h-[80px] w-full items-center justify-between bg-white px-[40px] py-[10px]">
+      <div className="flex h-[80px] w-full items-center bg-white px-[40px] py-[10px]">
+        <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between">
         {/* Left: logo + nav */}
         <div className="flex items-center gap-[40px]">
           <div className="relative h-[26px] w-[129px]">
@@ -80,6 +81,7 @@ export default function SupportHeader() {
           <button className="flex items-center justify-center rounded-[20px] border border-[#197eeb] bg-[#197eeb] px-[20px] py-[10px]">
             <span className="text-[16px] font-semibold leading-normal text-white">Sign Up</span>
           </button>
+        </div>
         </div>
       </div>
 

@@ -28,7 +28,7 @@ export default function GaHeader() {
       </div>
 
       {/* Country selector */}
-      <div className="absolute right-4 top-1/2 z-20 -translate-y-1/2 min-[1024px]:right-10">
+      <div className="absolute right-[max(16px,calc((100%-1240px)/2))] top-1/2 z-20 -translate-y-1/2">
         <CountrySelector tone="light" />
       </div>
     </header>

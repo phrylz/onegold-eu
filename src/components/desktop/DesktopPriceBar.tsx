@@ -33,24 +33,26 @@ export default function DesktopPriceBar({
   localeSelector?: boolean;
 }) {
   return (
-    <div className="relative z-30 flex w-full items-center justify-center gap-10 bg-[#1a3d62] px-[100px] py-[10px]" data-node-id="5844:6347">
-      {ROWS.map((r) => {
-        const color = r.dir === "up" ? "text-[#27d659]" : "text-[#ff3c00]";
-        return (
-          <div key={r.metal} className="flex items-center gap-[10px] text-[16px] leading-none whitespace-nowrap">
-            <span className="text-white">{r.metal}</span>
-            <span className="text-white">{r.price}</span>
-            <Arrow dir={r.dir} />
-            <span className={color}>{r.change}</span>
-            <span className={color}>{r.pct}</span>
+    <div className="relative z-30 w-full bg-[#1a3d62] py-[10px]" data-node-id="5844:6347">
+      <div className="relative mx-auto flex w-full max-w-[1240px] items-center justify-center gap-10 px-4">
+        {ROWS.map((r) => {
+          const color = r.dir === "up" ? "text-[#27d659]" : "text-[#ff3c00]";
+          return (
+            <div key={r.metal} className="flex items-center gap-[10px] text-[16px] leading-none whitespace-nowrap">
+              <span className="text-white">{r.metal}</span>
+              <span className="text-white">{r.price}</span>
+              <Arrow dir={r.dir} />
+              <span className={color}>{r.change}</span>
+              <span className={color}>{r.pct}</span>
+            </div>
+          );
+        })}
+        {localeSelector && (
+          <div className="absolute right-4 top-1/2 -translate-y-1/2">
+            <CountrySelector tone="light" />
           </div>
-        );
-      })}
-      {localeSelector && (
-        <div className="absolute right-[20px] top-1/2 -translate-y-1/2">
-          <CountrySelector tone="light" />
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

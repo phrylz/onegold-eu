@@ -182,7 +182,7 @@ function FaqNumbers() {
       <h2 className="w-full text-center text-[48px] font-normal leading-normal text-black">
         OneGold by the Numbers
       </h2>
-      <div className="flex w-full gap-[20px] items-start">
+      <div className="mx-auto flex w-full max-w-[1240px] gap-[20px] items-start">
         {/* Ounces */}
         <div className="flex flex-1 flex-col gap-[20px] items-center justify-center px-[20px]">
           <Image
@@ -327,21 +327,23 @@ function FaqBullion() {
 
 function FaqFooterBar() {
   return (
-    <div className="flex h-[50px] w-full items-center gap-[10px] bg-black px-[100px]">
-      <Image
-        src="/assets/faq-goldbar-icon.svg"
-        alt=""
-        aria-hidden
-        width={14}
-        height={22}
-        className="h-[22px] w-[14px] shrink-0"
-      />
-      <p className="whitespace-nowrap text-[16px] leading-normal text-white">
-        A Bullion International Group Company
-      </p>
-      <p className="flex-1 text-right text-[16px] leading-normal text-white">
-        © 2025 OneGold
-      </p>
+    <div className="w-full bg-black">
+      <div className="mx-auto flex h-[50px] w-full max-w-[1240px] items-center gap-[10px] px-4 min-[1440px]:px-0">
+        <Image
+          src="/assets/faq-goldbar-icon.svg"
+          alt=""
+          aria-hidden
+          width={14}
+          height={22}
+          className="h-[22px] w-[14px] shrink-0"
+        />
+        <p className="whitespace-nowrap text-[16px] leading-normal text-white">
+          A Bullion International Group Company
+        </p>
+        <p className="flex-1 text-right text-[16px] leading-normal text-white">
+          © 2025 OneGold
+        </p>
+      </div>
     </div>
   );
 }
@@ -350,7 +352,7 @@ function FaqFooterBar() {
 
 export default function FaqDesktop() {
   return (
-    <div className="mx-auto flex w-full max-w-[1440px] flex-col overflow-hidden bg-white">
+    <div className="flex w-full flex-col overflow-hidden bg-white">
       <FaqLogoHeader />
       <FaqOfferBand />
       <FaqIntroduction />

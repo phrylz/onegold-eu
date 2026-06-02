@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function DesktopAbout() {
   return (
-    <section className="flex w-full flex-col items-start justify-center gap-10 bg-gradient-to-b from-[#0060d4] to-[#197eeb] px-[100px] py-20" data-node-id="5844:6772">
-      <div className="flex w-full items-center justify-between">
+    <section className="flex w-full flex-col items-center justify-center gap-10 bg-gradient-to-b from-[#0060d4] to-[#197eeb] px-[100px] py-20" data-node-id="5844:6772">
+      <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between">
         <h2 className="whitespace-nowrap text-[48px] font-normal leading-normal text-white">
           About OneGold
         </h2>
@@ -14,7 +14,7 @@ export default function DesktopAbout() {
           </p>
         </div>
       </div>
-      <p className="w-full text-[18px] leading-normal text-white">
+      <p className="mx-auto w-full max-w-[1240px] text-[18px] leading-normal text-white">
         OneGold is part of the Bullion International Group, a global leader in
         precious metals owned by Switzerland&rsquo;s MKS PAMP. The Group brings
         together industry-leading brands, advanced technology, and decades of

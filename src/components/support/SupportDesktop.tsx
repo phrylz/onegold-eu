@@ -4,7 +4,7 @@ import DesktopFooter from "@/components/desktop/DesktopFooter";
 
 export default function SupportDesktop() {
   return (
-    <div className="mx-auto flex w-full max-w-[1440px] flex-col overflow-hidden bg-white">
+    <div className="flex w-full flex-col overflow-hidden bg-white">
       {/* Page Top: price bar + nav header + promo bar */}
       <SupportHeader />
 
