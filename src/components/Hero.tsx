@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountrySelector from "@/components/CountrySelector";
 
 export default function Hero() {
   return (
@@ -16,8 +17,22 @@ export default function Hero() {
         className="z-0 object-cover"
       />
 
+      {/* Country selector */}
+      <div className="absolute right-3 top-3 z-20">
+        <CountrySelector tone="light" />
+      </div>
+
       {/* Hero content */}
       <div className="relative z-10 flex w-full flex-col items-center gap-[25px]">
+        <Image
+          src="/assets/onegold-logo.png"
+          alt="OneGold"
+          width={209}
+          height={45}
+          priority
+          className="h-[45px] w-[209px]"
+        />
+
         <h1 className="w-full text-center text-[36px] font-normal leading-normal text-white">
           Gold and Silver Simplified
         </h1>

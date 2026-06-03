@@ -1,4 +1,3 @@
-import SiteHeader from "@/components/SiteHeader";
 import Hero from "@/components/Hero";
 import CtaBand from "@/components/CtaBand";
 import StatsBand from "@/components/StatsBand";
@@ -13,7 +12,6 @@ import Footer from "@/components/Footer";
 export default function MobileLanding() {
   return (
     <div className="mx-auto flex w-full max-w-[480px] flex-col overflow-hidden bg-white">
-      <SiteHeader />
       <Hero />
       <CtaBand />
       <StatsBand />

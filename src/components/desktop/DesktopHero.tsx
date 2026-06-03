@@ -1,5 +1,7 @@
 import Image from "next/image";
+import CountrySelector from "@/components/CountrySelector";
 
+const APP_LINK = "https://onegold.smart.link/pd8n6enxs";
 const arial = { fontFamily: "Arial, Helvetica, sans-serif" } as const;
 
 function Star({ size = 32 }: { size?: number }) {
@@ -31,6 +33,11 @@ export default function DesktopHero() {
     >
       <Image src="/assets/d-hero-bg.jpg" alt="" fill aria-hidden className="z-0 object-cover" />
 
+      {/* Country selector — top-right, just below the ticker */}
+      <div className="absolute right-[max(16px,calc((100%-1240px)/2))] top-3 z-20">
+        <CountrySelector tone="light" />
+      </div>
+
       <div className="relative z-10 mx-auto flex w-full max-w-[1240px] flex-col gap-[30px] px-4 pt-20 min-[1440px]:px-0">
         <div className="flex w-full items-center gap-5">
           <Image
@@ -43,31 +50,63 @@ export default function DesktopHero() {
           />
 
           <div className="flex min-w-0 flex-1 flex-col items-start gap-5">
-            <h1 className="whitespace-nowrap text-[48px] font-normal leading-normal text-white">
+            <Image
+              src="/assets/onegold-logo.png"
+              alt="OneGold"
+              width={175}
+              height={38}
+              priority
+              className="h-[38px] w-[175px]"
+            />
+            <h1 className="text-[48px] font-normal leading-normal text-white">
               Gold and Silver Simplified
             </h1>
+            <p className="text-[24px] font-normal leading-normal text-cyan">
+              Buy Switzerland Gold at Spot with the Promo Code{" "}
+              <span className="font-bold">GOLD20</span>
+            </p>
             <p className="w-full text-[24px] font-normal leading-normal text-white">
               OneGold offers direct ownership of gold, silver, and platinum
               stored in secure Swiss vaults. Backed by 70+ years of industry
               expertise, our trusted team delivers a best-in-class experience
               through a modern, easy-to-use mobile app.
             </p>
-            <div className="flex w-full items-center justify-end gap-[14px]">
-              <Image
-                src="/assets/bullion-logo.png"
-                alt="Bullion International Group"
-                width={112}
-                height={40}
-                className="h-[40px] w-auto"
-              />
-              <span aria-hidden className="h-[52px] w-px bg-white/30" />
-              <Image
-                src="/assets/endorse-right.svg"
-                alt="Gold Avenue · APMEX"
-                width={82}
-                height={31}
-                className="h-[31px] w-auto"
-              />
+
+            {/* Get the App + QR, with endorsers on the right */}
+            <div className="flex w-full items-end justify-between gap-5 pt-[10px]">
+              <div className="flex items-center gap-4">
+                <a
+                  href={APP_LINK}
+                  className="rounded-[10px] bg-[#0060d4] px-7 py-4 text-[20px] font-semibold text-white transition-colors hover:bg-[#0a6fe6]"
+                >
+                  Get the App
+                </a>
+                <Image
+                  src="/assets/d-hero-qr.png"
+                  alt="Scan to download the OneGold app"
+                  width={96}
+                  height={96}
+                  className="size-[96px] rounded-[8px] border border-white/30"
+                />
+              </div>
+
+              <div className="flex items-center gap-[14px]">
+                <Image
+                  src="/assets/bullion-logo.png"
+                  alt="Bullion International Group"
+                  width={112}
+                  height={40}
+                  className="h-[40px] w-auto"
+                />
+                <span aria-hidden className="h-[52px] w-px bg-white/30" />
+                <Image
+                  src="/assets/endorse-right.svg"
+                  alt="Gold Avenue · APMEX"
+                  width={82}
+                  height={31}
+                  className="h-[31px] w-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -87,21 +126,6 @@ export default function DesktopHero() {
           />
         </div>
       </div>
-
-      {/* QR "Get the App" pinned top-right */}
-      <a
-        href="https://onegold.smart.link/pd8n6enxs"
-        className="absolute right-[max(16px,calc((100%-1240px)/2))] top-0 z-20 flex w-[160px] flex-col items-center gap-[15px] rounded-b-[20px] border border-[#197eeb] bg-[#0060d4] py-[10px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)]"
-      >
-        <span className="text-center text-[20px] text-white">Get the App</span>
-        <Image
-          src="/assets/d-hero-qr.png"
-          alt="Scan to download the OneGold app"
-          width={120}
-          height={120}
-          className="size-[120px] rounded-[15px]"
-        />
-      </a>
     </section>
   );
 }
